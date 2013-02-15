@@ -20,7 +20,10 @@ An introduction to distributed source code management with git.
 
 ### Distributed
 
-> No single place is more important than the other single place.
+> Being distributed very much means that you do not have one central
+> location that keeps track of your data. No single place is more
+> important than any other single place.
+> - Linus Torvals
 
 - no central server
 - no central repository
