@@ -45,7 +45,11 @@ An introduction to distributed source code management with git.
 ### Setting up git (on Windows)
 
 - Installation
+- Merge Tools
 - Configuration
+	- Username, Email
+	- SSH Keys
+	- SSH Identities
 
 ---
 
@@ -54,7 +58,9 @@ An introduction to distributed source code management with git.
 - Managing identities
 - Creating a repository
 - Cloning a repository
+- Comparing Commits
 - Working with .gitignore files
+	- Tracking a .NET project
 - Creating a branch
 - Committing changes
 - Undoing commits
@@ -63,10 +69,18 @@ An introduction to distributed source code management with git.
 - Merging branches
 - Pushing changes to a remote location
 - Rewriting history
+- Rebasing Repositories
 
 ---
 
 ### Tools
+
+---
+
+### Hosting
+
+- Bitbucket/Github
+- Self-Hosting
 
 ---
 
