@@ -77,6 +77,13 @@ An introduction to distributed source code management with git.
 
 ### Tools
 
+- Merge Tools
+- Consoles for Windows
+	- PowerShell
+		- Posh-git
+	- ConEm
+- Git UIs
+
 ---
 
 ### Hosting
