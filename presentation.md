@@ -61,6 +61,8 @@ An introduction to distributed source code management with git.
 - Comparing Commits
 - Working with .gitignore files
 	- Tracking a .NET project
+- Rebasing a single commit on top of another (Cherry Picking)
+	- http://stackoverflow.com/questions/1191282/git-diff-commits-difference
 - Creating a branch
 - Committing changes
 - Undoing commits
