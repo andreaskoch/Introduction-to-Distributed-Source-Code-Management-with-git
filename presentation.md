@@ -50,7 +50,21 @@ Git is a powerful command-line tool you can use on Linux, Mac OS and Windows:
 
 ### History of git
 
-Developed by Linus Torvalds for the Linux kernel development in 2005 as an replacement for [BitKeeper](http://en.wikipedia.org/wiki/BitKeeper)
+Developed by Linus Torvalds for the Linux kernel development in 2005 as an replacement for [BitKeeper](http://en.wikipedia.org/wiki/BitKeeper).
+
+- The initial version of git has been written by Torvalds in two weeks.
+- Created out of necessity and frustration about the existing source code control sytems (such as CVS).
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/4XpnKHJAok8" frameborder="0" allowfullscreen></iframe>
+
+---
+
+### git today
+
+- The git code is publicly available is tracked with ... git (available at [github.com/git](http://github.com/git/git/))
+- The code is activly maintained by > 50 developers
+
+![Screenshot of the Git Contributors Page at github.com](files/Why-use-Git/Screenshot-Git-Source-Code-Contributors-Page-at-Github.png)
 
 ---
 
