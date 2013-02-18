@@ -2,6 +2,12 @@
 
 An introduction to distributed source code management with git.
 
+![git Logo](files/git-logo.png)
+
+---
+
+## Source Code Management / Version Control
+
 ---
 
 ### What do you want from source code management systems?
@@ -14,13 +20,31 @@ An introduction to distributed source code management with git.
 
 ---
 
+## An overview of git
+
+---
+
 ### What is git?
 
 A distributed version control (DVC) and source code management (SCM) system
 
 - A content(!) tracker, not a file tracker.
-- Command line tool
-- Platform independent
+- A command line tool
+- Available for all platforms
+- Free and open software
+- Leight-weight
+
+---
+
+### The git command-line
+
+Git is a powerful command-line tool you can use on Linux, Mac OS and Windows:
+
+<!-- langauge: lang-sh -->
+
+	$ git
+
+![Screenshot of the git command line](files/Command-Line/Screenshot-git-command-line.png)
 
 ---
 
@@ -41,15 +65,15 @@ git := British slang meaning "a rotten person"
 
 ### Key features of git
 
-- Filesystem-based: Git does not track single files but a whole filesystem/folder structure by their content
-- No central servers
+- Git does not track single files but a whole filesystem/folder structure by its content
+- Git is distributed without a central server
 - Every repository contains the complete history
-- Rapid branching and merging
+- Git is optimized for rapid branching and merging
 - Easy synchronization with other repositories over existing protocols such as http, ftp, rsync or ssh
 
 ---
 
-### Distributed
+### Distributed Version Control
 
 > Being distributed very much means that you do not have one central
 > location that keeps track of your data. No single place is more
@@ -63,7 +87,6 @@ git := British slang meaning "a rotten person"
 ---
 
 ### How does git cover the things you expect from a SCM?
-
 
 **Experimenting without loosing changes**
 
@@ -96,7 +119,27 @@ git := British slang meaning "a rotten person"
 
 ---
 
-### Differences between distributed and centralized SCM
+### What distinguishes git from centralized SCMs ...
+
+... such as Team Foundation Server or SVN (Apache Subversion):
+
+- no need for a server
+- no central database
+- no need for permission management
+- no special infrastructure
+- no need to be afraid of branching and merging
+
+---
+
+### Why do I think we could benefit from using git ?
+
+Branching and merging is so painful for us that we hardly do it.
+
+A **healthy branching strategy** would look something like this:
+![Illustration of a health branching strategy which utilizes multiple branches](files/Why-use-Git/Healthy-Branching-Strategy.png)
+
+And opposed to that, this is how our unhealthy branching "strategy" looks like ... because branching and merging is hard:
+![Illustration of an ubhealth development strategy which does not use branching](files/Why-use-Git/Unhealthy-Branching-Strategy.png)
 
 ---
 
@@ -116,6 +159,17 @@ git := British slang meaning "a rotten person"
 
 ---
 
+## Terminology
+
+- Working Tree
+- Commit
+- Branch and tags
+- Index
+- Stash
+- .gitignore
+
+---
+
 ### Setting up git (on Windows)
 
 - Installation
@@ -124,6 +178,13 @@ git := British slang meaning "a rotten person"
 	- Username, Email
 	- SSH Keys
 	- SSH Identities
+
+---
+
+### Installation
+
+For the installation of git goto [http://git-scm.com](http://git-scm.com) and download the latest version for Windows.
+
 
 ---
 
@@ -154,8 +215,8 @@ git := British slang meaning "a rotten person"
 - Merge Tools
 - Consoles for Windows
 	- PowerShell
-		- Posh-git
-	- ConEm
+	- PowerShell + Posh-git
+	- ConEmu + PowerShell + Posh-git
 - Git UIs
 
 ---
@@ -167,9 +228,40 @@ git := British slang meaning "a rotten person"
 
 ---
 
+## Useful Resources
+
+---
+
+### Official git website
+
+[Official git website at git-scm.com](http://git-scm.com/)
+
+---
+
+### Tutorials
+
+Github has created a fun online course for learning git:
+
+http://try.github.com
+
+![Screenshot of githubs interactive git course website](files/Online-Tutorial/tryGit-Online-Tutorial-at-github-Screenshot-1.png)
+
+---
+
+### Pro Git eBook
+
+The "Pro Git" eBook is available for free on the git website.
+
+[Pro Git Online](http://git-scm.com/book) / [Pro Git PDF](https://github.s3.amazonaws.com/media/progit.en.pdf)
+
+![Screenshot of the online version of the Pro Git eBook](files/eBooks/Screenshot-Pro-Git-eBook-Online-Version.png)
+
+---
+
 ### Videos
 
 - [Google Tech Talk: Linus Torvals on git](http://www.youtube.com/watch?v=4XpnKHJAok8)
+- [Git Basics Videos](http://git-scm.com/videos)
 
 ---
 

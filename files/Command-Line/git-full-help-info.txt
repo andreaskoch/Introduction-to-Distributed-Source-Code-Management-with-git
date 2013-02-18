@@ -1,0 +1,62 @@
+usage: git [--version] [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [-c name=value] [--help]
+           <command> [<args>]
+
+available git commands in '/usr/lib/git-core'
+---------------------------------------------
+  add                      hash-object              relink
+  add--interactive         help                     remote
+  am                       http-backend             remote-ext
+  annotate                 http-fetch               remote-fd
+  apply                    http-push                remote-ftp
+  archive                  imap-send                remote-ftps
+  bisect                   index-pack               remote-http
+  bisect--helper           init                     remote-https
+  blame                    init-db                  remote-testgit
+  branch                   instaweb                 repack
+  bundle                   log                      replace
+  cat-file                 lost-found               repo-config
+  check-attr               ls-files                 request-pull
+  check-ref-format         ls-remote                rerere
+  checkout                 ls-tree                  reset
+  checkout-index           mailinfo                 rev-list
+  cherry                   mailsplit                rev-parse
+  cherry-pick              merge                    revert
+  clean                    merge-base               rm
+  clone                    merge-file               send-pack
+  commit                   merge-index              sh-i18n--envsubst
+  commit-tree              merge-octopus            shell
+  config                   merge-one-file           shortlog
+  count-objects            merge-ours               show
+  credential-cache         merge-recursive          show-branch
+  credential-cache--daemon merge-resolve            show-index
+  credential-store         merge-subtree            show-ref
+  daemon                   merge-tree               stage
+  describe                 mergetool                stash
+  diff                     mktag                    status
+  diff-files               mktree                   stripspace
+  diff-index               mv                       submodule
+  diff-tree                name-rev                 symbolic-ref
+  difftool                 notes                    tag
+  difftool--helper         pack-objects             tar-tree
+  fast-export              pack-redundant           unpack-file
+  fast-import              pack-refs                unpack-objects
+  fetch                    patch-id                 update-index
+  fetch-pack               peek-remote              update-ref
+  filter-branch            prune                    update-server-info
+  fmt-merge-msg            prune-packed             upload-archive
+  for-each-ref             pull                     upload-pack
+  format-patch             push                     var
+  fsck                     quiltimport              verify-pack
+  fsck-objects             read-tree                verify-tag
+  gc                       rebase                   web--browse
+  get-tar-commit-id        receive-pack             whatchanged
+  grep                     reflog                   write-tree
+
+git commands available from elsewhere on your $PATH
+---------------------------------------------------
+  master-sync
+
+See 'git help <command>' for more information on a specific command.
