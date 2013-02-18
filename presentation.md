@@ -102,12 +102,41 @@ git := British slang meaning "a rotten person"
 
 ---
 
+### Distributed development workflows
+
+git supports all kinds of developement workflows and branching strategries (because of its distributed nature):
+
+**Subversion-Style workflow**
+
+One central repository where one or more developers pull from and commit to:
+
+![Illustration of the Subversion-Style workflow](files/Distributed-Workflows/Git-Distributed-Workflow-Subversion-Style.png)
+
+
+**Integration Manager Workflow**
+
+One single person (the "integration manager") pulls changes from different sources/developers, combines them in his or her repository and pushes the combined commits to a central "blessed" repository:
+
+![Illustration of the Integration Manager Workflow](files/Distributed-Workflows/Git-Distributed-Workflow-Integration-Manager.png)
+
+
+**Dictator and Lieutenants Workflow**
+
+In this **network of trust** a "dictator" pulls from the repositories of her or her trusted "lieutenants" which on their side pull from their trusted developers. The dictator integrates the changes from the lieutenants and then pushes to a central blessed repository.
+
+![Illustration of the Dictator and Lieutenants Workflow](files/Distributed-Workflows/Git-Distributed-Workflow-Dictator-and-Lieutenants.png)
+
+source: http://git-scm.com/about/distributed
+
+---
+
 ### How does git cover the things you expect from a SCM?
 
 **Experimenting without loosing changes**
 
 - Git allows you to have multiple experimentation or feature branches which do not interfere with the master branch.
 - You can keep your experiments for yourself - your co-workers don't need to know about your experiments if you don't want to
+- You can switch between branches very quickly
 
 **Documentation**
 
