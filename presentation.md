@@ -6,15 +6,46 @@ An introduction to distributed source code management with git.
 
 ### What do you want from source code management systems?
 
-- Experimenting without loosing changes
-- Documentation
-- Backup
-- Collaboration
-- No overhead (file cluttering, file locks, server management)
+- **Experimentation** without risk of loosing data
+- **Documentation** of the development process
+- Easy **backup**
+- Easy **collaboration** with (remote) co-workers
+- **No overhead** (file cluttering, file locks, server management)
 
 ---
 
 ### What is git?
+
+A distributed version control (DVC) and source code management (SCM) system
+
+- A content(!) tracker, not a file tracker.
+- Command line tool
+- Platform independent
+
+---
+
+### History of git
+
+Developed by Linus Torvalds for the Linux kernel development in 2005 as an replacement for [BitKeeper](http://en.wikipedia.org/wiki/BitKeeper)
+
+---
+
+### Why the name "git"?
+
+git := British slang meaning "a rotten person"
+
+> I’m an egotistical bastard, and I name all my projects after myself. First Linux, now git.”
+> - Linus Torvals
+
+---
+
+### Key features of git
+
+- Filesystem-based: Git does not track single files but a whole filesystem/folder structure by their content
+- No central servers
+- Every repository contains the complete history
+- Rapid branching and merging
+- Easy synchronization with other repositories over existing protocols such as http, ftp, rsync or ssh
 
 ---
 
@@ -31,7 +62,50 @@ An introduction to distributed source code management with git.
 
 ---
 
+### How does git cover the things you expect from a SCM?
+
+
+**Experimenting without loosing changes**
+
+- Git allows you to have multiple experimentation or feature branches which do not interfere with the master branch.
+- You can keep your experiments for yourself - your co-workers don't need to know about your experiments if you don't want to
+
+**Documentation**
+
+- Git encourages developers to commit early and often
+
+**Backup**
+
+- Every developer has a full-copy of the repository
+- Every repository contains the full history
+- Just copy to the repository folder to another location and you are done
+
+**Collaboration**
+
+- Every developer can work on his or her own branch
+- Easy exchange of commits
+- Branches and even single commits can be easily exchanged and merged
+
+
+**No overhead**
+
+- All git needs is a ".git" folder in your repository
+- Git does not hold file-locks
+- Developers don't have do asks for permission before editing a file
+- You don't need special infrastructure to exchange commits - all you need is HTTP or SSH
+
+---
+
 ### Differences between distributed and centralized SCM
+
+---
+
+### Other distributed SCMs
+
+- BitKeeper
+- Mercurial
+- Monotone
+- Bazaar
 
 ---
 
