@@ -133,22 +133,41 @@ git := British slang meaning "a rotten person"
 
 ### Why do I think we could benefit from using git ?
 
-Branching and merging is so painful for us that we hardly do it.
+With our centralized version control system branching and merging is so painful for us that we hardly do it.
 
 A **healthy branching strategy** would look something like this:
 ![Illustration of a health branching strategy which utilizes multiple branches](files/Why-use-Git/Healthy-Branching-Strategy.png)
 
-And opposed to that, this is how our unhealthy branching "strategy" looks like ... because branching and merging is hard:
+But opposed to that, this is how our unhealthy branching "strategy" looks like ... because branching and merging is (considered) hard:
 ![Illustration of an ubhealth development strategy which does not use branching](files/Why-use-Git/Unhealthy-Branching-Strategy.png)
 
 ---
 
-### Other distributed SCMs
+### Other distributed version control systems
 
-- BitKeeper
-- Mercurial
-- Monotone
-- Bazaar
+There are other distributed SCMs out there, but not that many ...
+
+**Mercurial**
+
+- Mercurial is quite similar to git
+- Written in Python
+- I think the GUI tools for Mercurial are much better than those for git
+- Mercurial is not as fast as git (at least this is my experience)
+
+**BitKeeper**
+
+- commercial product
+- has been used by for the kernel development until 2005
+
+**Bazaar**
+
+- developed by Canonical
+- written in Python
+
+**Monotone**
+
+- git is influenced by Monotone
+- is not as widely used as Mercurial or Bazaar
 
 ---
 
