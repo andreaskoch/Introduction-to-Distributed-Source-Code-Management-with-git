@@ -55,6 +55,8 @@ Developed by Linus Torvalds for the Linux kernel development in 2005 as an repla
 - The initial version of git has been written by Torvalds in two weeks.
 - Created out of necessity and frustration about the existing source code control sytems (such as CVS).
 
+There is a good Google Tech Talk with Linus Torvalds where he talks about the history and motivation behind git:
+
 <iframe width="420" height="315" src="http://www.youtube.com/embed/4XpnKHJAok8" frameborder="0" allowfullscreen></iframe>
 
 ---
