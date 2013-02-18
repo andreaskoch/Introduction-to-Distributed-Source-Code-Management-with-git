@@ -2,7 +2,7 @@
 
 An introduction to distributed source code management with git.
 
-![git Logo](files/git-logo.png)
+![git Logo](files/Git-logo.png)
 
 ---
 
