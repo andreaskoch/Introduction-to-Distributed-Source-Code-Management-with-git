@@ -584,6 +584,41 @@ If you prefer a nice visualization of the differences between two commits you ca
 
 ---
 
+### Cloning a repository
+
+In order to retrieve a copy of an existing repository you can use the **clone** command:
+
+<!-- language: lang-sh -->
+
+	> git clone <Path-or-URL>
+
+This will clone the repository behind the specified URL or path into a new directory in the current location.
+
+For example you can clone the repository of this presentation from github:
+
+<!-- language: lang-sh -->
+
+	> git clone https://github.com/andreaskoch/Introduction-to-Distributed-Source-Code-Management-with-git.git
+
+![Cloning a repository from github](files/Git-Workflows/Basics/Cloning-a-remote-repository-from-github.png)
+
+---
+
+### Pulling from another repository
+
+Instead of cloning another repository you can also pull from it into your existing repository.
+
+<!-- language: lang-sh -->
+
+	> mkdir NewRepo
+	> cd NewRepo
+	> git init
+	> git pull <Path-or-URL>
+
+![Pulling changes into an existing repository](files/Git-Workflows/Basics/Pulling-changes-from-a-remote-repository-into-local-repository.png)
+
+---
+
 ### Hosting
 
 - Bitbucket/Github
@@ -640,5 +675,7 @@ The "Pro Git" eBook is available for free on the git website.
 ---
 
 language: en-US
+
 date: 2013-02-15
+
 tags: Source Code Management, git
