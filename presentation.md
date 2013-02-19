@@ -550,7 +550,19 @@ This command opens up a text editor in which you can simple change the text of y
 
 ---
 
-### Undoing a public commit
+### Reverting a public commit
+
+If you want to take back a commit which has already been pushed to another location can cannot simply "undo" it, because public history cannot be changed. But you can add a commit which **reverts** another commit.
+
+<!-- language: lang-sh -->
+
+	> git revert <hash of the commit to revert>
+
+git revert applies the inverse of a given commit.
+
+![Screenshot of the text editor window that is displayed when a revert is being performed](files/Git-Workflows/Basics/Revert-a-commit-message-editor.png)
+
+![Result of git revert](files/Git-Workflows/Basics/Revert-a-commit-result.png)
 
 ---
 
