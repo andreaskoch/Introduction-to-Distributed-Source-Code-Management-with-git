@@ -492,6 +492,20 @@ You can remove files from the staging area if you have added it accidentially. T
 
 ---
 
+### Commiting changes
+
+By commiting you can save all staged files to your (local) repository.
+
+<!-- language: lang-sh -->
+
+	> git commit -m "A first commit"
+
+![Screenshot of a first commit](files/Git-Workflows/Basics/Committing-a-change.png)
+
+Once you have executed the commit, all changes are recorded to your repository.
+
+---
+
 ### Hosting
 
 - Bitbucket/Github
