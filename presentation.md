@@ -396,9 +396,12 @@ It is supposed to be easy to integrate any other merge tool with git. And it is 
 
 ---
 
+## Working with git
+
+---
+
 ### Typical workflows with git
 
-- Managing identities
 - Creating a repository
 - Cloning a repository
 - Comparing Commits
@@ -415,17 +418,7 @@ It is supposed to be easy to integrate any other merge tool with git. And it is 
 - Pushing changes to a remote location
 - Rewriting history
 - Rebasing Repositories
-
----
-
-### Tools
-
-- Merge Tools
-- Consoles for Windows
-	- PowerShell
-	- PowerShell + Posh-git
-	- ConEmu + PowerShell + Posh-git
-- Git UIs
+- Managing identities
 
 ---
 
@@ -470,6 +463,8 @@ The "Pro Git" eBook is available for free on the git website.
 
 - [Google Tech Talk: Linus Torvals on git](http://www.youtube.com/watch?v=4XpnKHJAok8)
 - [Git Basics Videos](http://git-scm.com/videos)
+- [Tekpub: Mastering Git](http://tekpub.com/productions/git)
+- [Pluralsight: Git Fundamentals](http://pluralsight.com/training/courses/TableOfContents?courseName=git-fundamentals)
 
 ---
 
