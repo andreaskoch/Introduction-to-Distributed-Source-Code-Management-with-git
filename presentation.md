@@ -600,7 +600,22 @@ For example you can clone the repository of this presentation from github:
 
 	> git clone https://github.com/andreaskoch/Introduction-to-Distributed-Source-Code-Management-with-git.git
 
-![CLoning a repository from github](files/Git-Workflows/Basics/Cloning-a-remote-repository-from-github.png)
+![Cloning a repository from github](files/Git-Workflows/Basics/Cloning-a-remote-repository-from-github.png)
+
+---
+
+### Pulling from another repository
+
+Instead of cloning another repository you can also pull from it into your existing repository.
+
+<!-- language: lang-sh -->
+
+	> mkdir NewRepo
+	> cd NewRepo
+	> git init
+	> git pull <Path-or-URL>
+
+![Pulling changes into an existing repository](files/Git-Workflows/Basics/Pulling-changes-from-a-remote-repository-into-local-repository.png)
 
 ---
 
