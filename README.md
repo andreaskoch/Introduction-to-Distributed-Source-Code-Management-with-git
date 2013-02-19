@@ -425,6 +425,33 @@ It is supposed to be easy to integrate any other merge tool with git. And it is 
 
 ---
 
+### Using the built-in help
+
+Git comes with a comprehensive help documentation which ships with every installation.
+
+**Display an help overview**
+
+<!-- language: lang-sh -->
+
+	> git help
+
+**Get a detailed list of all git commands**
+
+<!-- language: lang-sh -->
+
+	> git help -a
+
+
+**Help about a specific git command**
+
+<!-- language: lang-sh -->
+
+	> git help <command>
+
+![Screenshot of the git help command result](files/Git-Workflows/Basics/Git-Help-Overview.png)
+
+---
+
 ### Creating a repository - git init
 
 You can initialize a repository in any directory by using the **init** command:
