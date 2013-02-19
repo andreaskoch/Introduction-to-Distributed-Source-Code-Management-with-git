@@ -405,6 +405,7 @@ It is supposed to be easy to integrate any other merge tool with git. And it is 
 ### Typical workflows with git
 
 - Creating a repository
+- Getting help
 - Cloning a repository
 - Comparing Commits
 - Working with .gitignore files
@@ -424,9 +425,58 @@ It is supposed to be easy to integrate any other merge tool with git. And it is 
 
 ---
 
-### Creating a repository
+### Creating a repository - git init
 
+You can initialize a repository in any directory by using the **init** command:
 
+<!-- language: lang-sh -->
+
+	> git init
+
+The init command then creates a hidden subdirectory named ".git" that contains all necessary repository meta-data.
+
+![](files/Git-Workflows/Basics/Creating-a-repository-with-git-init.png)
+
+---
+
+### The .git metadata folder
+
+The .git folder is where all you commits, branches and tags will be stored, but for now you don't need to bother with the contents of this folder:
+
+![Screenshot of the content of a .git metadata folder](files/Git-Workflows/Basics/Git-Metadata-Folder-Content.png)
+
+---
+
+### Adding files to the index
+
+Once you have initialized a repository you can create, modify files and add the new files to the **index / staging area**.
+
+**Add one or more files to the index**
+
+<!-- language: lang-sh -->
+
+	> git add <filename1> <filename2>
+
+	> git add .
+	Add all files (in the current directory) to the index
+
+**Index / Staging Area**
+
+The index aka "staging area" is a file that contains the files that will go into your next **commit**.
+
+![Screenshot of a git repository where a new README.txt file has been added to the Index aka Staging Area](files/Git-Workflows/Basics/Git-Basic-the-index-aka-staging-area.png)
+
+---
+
+### Removing files from the index
+
+You can remove files from the staging area if you have added it accidentially. This means will will not go in your next commit, but the file itself will remain untouched in the folder.
+
+<!-- language: lang-sh -->
+
+	> git rm --cached <filename>
+
+![Screenshot removing a file from the staging area](files/Git-Workflows/Basics/Removing-a-file-from-the-index-aka-staging-area.png)
 
 ---
 
