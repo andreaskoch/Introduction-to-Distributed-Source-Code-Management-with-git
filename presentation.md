@@ -65,6 +65,7 @@ There is a good Google Tech Talk with Linus Torvalds where he talks about the hi
 
 - The git code is publicly available is tracked with ... git (available at [github.com/git](http://github.com/git/git/))
 - The code is activly maintained by > 50 developers
+- 
 
 ![Screenshot of the Git Contributors Page at github.com](files/Why-use-Git/Screenshot-Git-Source-Code-Contributors-Page-at-Github.png)
 
@@ -439,7 +440,7 @@ It is supposed to be easy to integrate any other merge tool with git. And it is 
 
 ---
 
-### Tutorials
+###  Interactive Online Tutorial
 
 Github has created a fun online course for learning git:
 
@@ -465,6 +466,15 @@ The "Pro Git" eBook is available for free on the git website.
 - [Git Basics Videos](http://git-scm.com/videos)
 - [Tekpub: Mastering Git](http://tekpub.com/productions/git)
 - [Pluralsight: Git Fundamentals](http://pluralsight.com/training/courses/TableOfContents?courseName=git-fundamentals)
+
+---
+
+### Other Resources
+
+- [Git for cowards](http://www.adoptioncurve.net/wp-content/uploads/2011/05/Git-For-Cowards.pdf)
+- [Intro to Git for Web Designers](http://www.webdesignerdepot.com/2009/03/intro-to-git-for-web-designers/)
+- [Git Cheat Sheet](http://byte.kde.org/~zrusin/git/git-cheat-sheet.svg)
+- [Git Reference](http://gitref.org)
 
 ---
 
