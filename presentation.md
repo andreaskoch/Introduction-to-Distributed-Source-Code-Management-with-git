@@ -528,8 +528,23 @@ Note: this does not work for your first commit ;-)
 
 ---
 
-### Rewriting History
+### Correcting a commit message
 
+If you want to change the message of your last commit you can simply type:
+
+<!-- language: lang-sh -->
+
+	> git commit --amend
+
+This command opens up a text editor in which you can simple change the text of your last commit message. Or you can use the `-m` parameter to enter the message directly:
+
+<!-- language: lang-sh -->
+
+	> git commit --amend -m "Your new commit message text"
+
+![](files/Git-Workflows/Basics/Amending-the-last-local-commit-message.png)
+
+**Note**: Changing the commit message will change the hash of your commit. Therefor you should use this technique carefully if you already pushed your repository to a remote location that is used by other developers.
 
 [more details](http://git-scm.com/book/ch6-4.html)
 
