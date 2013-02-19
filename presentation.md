@@ -239,9 +239,7 @@ There are other distributed SCMs out there, but not that many ...
 - Installation
 - Configuration
 	- Username, Email
-	- SSH Keys
-	- SSH Identities
-- Merge Tools
+	- Merge Tools
 
 ---
 
@@ -325,7 +323,11 @@ When the installation was successful when you can execute "git.exe" from all loc
 
 ---
 
-### Global Config File (.gitconfig)
+### Configuration: Username and Email
+
+---
+
+#### Global Config File (.gitconfig)
 
 The global git configuration is located in a file called .gitconfig in your home directory
 
@@ -335,7 +337,7 @@ The global git configuration is located in a file called .gitconfig in your home
 
 ---
 
-### Set Username and Email
+#### Set Username and Email
 
 In order to set your Username and Email adress for future commits you can either edit the "%UserProfile%\.gitconfig" file in an editor of your choice or use git config command with the `--global` flag:
 
@@ -345,6 +347,52 @@ In order to set your Username and Email adress for future commits you can either
 	> git config --global user.email "andyk7@gmail.com"
 
 ![Screenshot set username and email - Set Username and Email with git](files/Git-Configuration/Username-and-Email/Screenshot-Setting-username-and-email-globally-with-git-3-email.png)
+
+---
+
+### Configuration: Merge and Diff Tool
+
+By default git does not ship with much GUI tools and everything is handled in the command-line:
+
+![Screenshot of the gits command-line based diff viewer](files/Git-Configuration/Merge-Tool/Screenshot-gits-default-command-line-diff-tool.png)
+
+But you can configure git to use other diff and merge tools (but this isn't that easy on Windows if you don't use tools which are supported out of the box).
+
+---
+
+### Configuring KDiff3 on Windows
+
+I couldn't get my perferred merging tool [WinMerge](http://winmerge.org/) to work with git on Windows, but [KDiff3](http://kdiff3.sourceforge.net/) is also quite nice and can be easily configured to work with git.
+
+**Step 1 - Download and install KDiff3**
+
+http://kdiff3.sourceforge.net
+
+**Step 2 - Extend your .gitconfig**
+
+	[merge]
+		tool = kdiff3
+	
+	[mergetool]
+		prompt = false
+	
+	[mergetool "kdiff3"]
+		prompt = false
+		path = c:/Program Files (x86)/KDiff3/kdiff3.exe
+	
+	[diff]
+		tool = kdiff3
+		guitool = kdiff3
+	
+	[difftool]
+		prompt = false
+	
+	[difftool "kdiff3"]
+		path = c:/Program Files (x86)/KDiff3/kdiff3.exe
+
+![Screenshot of the KDiff3 as the diff and merge tool for git](files/Git-Configuration/Merge-Tool/Screenshot-KDiff3-as-gits-diff-and-merge-tool.png)
+
+It is supposed to be easy to integrate any other merge tool with git. And it is - at least on Unix based systems. But on Windows I haven't found a way yet.
 
 ---
 
