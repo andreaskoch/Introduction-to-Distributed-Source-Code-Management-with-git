@@ -566,6 +566,24 @@ git revert applies the inverse of a given commit.
 
 ---
 
+### Comparing commits
+
+In order to visualize the changes between two commits you can use the **diff** command:
+
+<!-- language: lang-sh -->
+
+	> git diff <commit-A> <commit-B>
+
+The command will display the differences between the two commits directly in the command line:
+
+![Screenshot of git diff in action](files/Git-Workflows/Basics/git-diff-command-line.png)
+
+If you prefer a nice visualization of the differences between two commits you can use the **difftool** command instead. The command will open the diff tool you have configured in your .gitconfig.
+
+![Screenshot of git diff in action](files/Git-Workflows/Basics/git-difftool-comparing-commits.png)
+
+---
+
 ### Hosting
 
 - Bitbucket/Github
