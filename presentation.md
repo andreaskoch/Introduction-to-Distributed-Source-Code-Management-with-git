@@ -65,7 +65,8 @@ There is a good Google Tech Talk with Linus Torvalds where he talks about the hi
 
 - The git code is publicly available is tracked with ... git (available at [github.com/git](http://github.com/git/git/))
 - The code is activly maintained by > 50 developers
-- 
+- In 2012 git has been used by 27% of all professional software developers (see: [Eclipse Foundation Survey](http://en.wikipedia.org/wiki/Git_(software)#Adoption))
+- Github one of the largest git hosters has reached [3 milliion users](https://github.com/blog/1382-three-million-users) in Januar 2013.
 
 ![Screenshot of the Git Contributors Page at github.com](files/Why-use-Git/Screenshot-Git-Source-Code-Contributors-Page-at-Github.png)
 
@@ -420,6 +421,12 @@ It is supposed to be easy to integrate any other merge tool with git. And it is 
 - Rewriting history
 - Rebasing Repositories
 - Managing identities
+
+---
+
+### Creating a repository
+
+
 
 ---
 
