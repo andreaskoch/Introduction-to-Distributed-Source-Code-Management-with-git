@@ -234,21 +234,86 @@ There are other distributed SCMs out there, but not that many ...
 
 ---
 
-### Setting up git (on Windows)
+## Setting up git on Windows
 
 - Installation
-- Merge Tools
 - Configuration
 	- Username, Email
 	- SSH Keys
 	- SSH Identities
+- Merge Tools
 
 ---
 
-### Installation
+### Installation Wizard
 
-For the installation of git goto [http://git-scm.com](http://git-scm.com) and download the latest version for Windows.
+For the installation of git goto [http://git-scm.com](http://git-scm.com) and download the latest version for Windows and execute the installer.
 
+![Screenshot of the git installation wizard start screen](files/Git-Installation-Process/Screenshot-Git-Installation-on-Windows-1-Start.png)
+
+---
+
+### Installation Wizard - Components
+
+In the "Select Components" dialog I suggest that you **uncheck**
+
+- Additional icons and
+- Windows Explorer Integration
+
+![Screenshot of the git installation wizard - Adjusting your PATH environment](files/Git-Installation-Process/Screenshot-Git-Installation-on-Windows-2-Select-Components-Diaglog.png)
+
+---
+
+### Installation Wizard - PATH Variable
+
+The installation wizard asks you how it should integrate with your system. Please check "Run Git from the Windows Command Prompt". This will make the "git.exe" avaiable from everywhere in your system.
+
+![Screenshot of the git installation wizard - Select Components](files/Git-Installation-Process/Screenshot-Git-Installation-on-Windows-3-Adjust-System-PATH-Dialog.png)
+
+---
+
+### Installation Wizard - Line Ending Conversion
+
+Because git comes from a Unix background, git uses Unix-style instead of Windows-style line-endings.
+You should select the "Checkout Windows-style, commit Unix-style line endings" option.
+
+**Windows-style line ending**
+
+Windows uses a carriage return charachter and a line feed character for its line endings:
+
+`"\r\n"`
+
+**Unix-style line ending**
+
+Unix just uses a single line feed charachter for indicating new lines:
+
+`"\n"`
+
+![Screenshot of the git installation wizard - Line Ending Conversion](files/Git-Installation-Process/Screenshot-Git-Installation-on-Windows-4-Checkout-Style-Dialog.png)
+
+---
+
+### Installation - bin folder
+
+The git intaller installs a bunch of Windows-compatible Linux commands.
+
+![Screenshot of the git installation - Bin Folder](files/Git-Installation-Process/Screenshot-Git-Installation-on-Windows-6-Bin-Folder.png)
+
+---
+
+### Installation - cmd folder
+
+The cmd-folder contains the git.exe and a script which sets the PATH to the bin folder and then launches a new command prompt.
+
+![Screenshot of the git installation - Bin Folder](files/Git-Installation-Process/Screenshot-Git-Installation-on-Windows-7-cmd-Folder-and-PATH-Environment-Variable.png)
+
+---
+
+### Testing the installation
+
+When the installation was successful when you can execute "git.exe" from all locations on your system:
+
+![Screenshot of the git installation - Command Prompt](files/Git-Installation-Process/Screenshot-Git-Installation-on-Windows-8-Command-Prompt.png)
 
 ---
 
