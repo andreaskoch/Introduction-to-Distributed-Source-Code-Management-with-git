@@ -447,6 +447,18 @@ The .git folder is where all you commits, branches and tags will be stored, but 
 
 ---
 
+### Checking the status of your repository with git status
+
+You can quickly check which the status of files in your repository/index by using the **status** command:
+
+<!-- language: lang-sh -->
+
+	> git status
+
+![Using git status to check the index of a repository](files/Git-Workflows/Basics/Checking-a-repository-with-git-status.png)
+
+---
+
 ### Adding files to the index
 
 Once you have initialized a repository you can create, modify files and add the new files to the **index / staging area**.
