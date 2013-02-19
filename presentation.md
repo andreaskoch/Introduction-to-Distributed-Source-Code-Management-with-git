@@ -482,7 +482,7 @@ The index aka "staging area" is a file that contains the files that will go into
 
 ### Removing files from the index
 
-You can remove files from the staging area if you have added it accidentially. This means will will not go in your next commit, but the file itself will remain untouched in the folder.
+You can remove files from the staging area if you have added it accidentally. This means will will not go in your next commit, but the file itself will remain untouched in the folder.
 
 <!-- language: lang-sh -->
 
@@ -503,6 +503,27 @@ By commiting you can save all staged files to your (local) repository.
 ![Screenshot of a first commit](files/Git-Workflows/Basics/Committing-a-change.png)
 
 Once you have executed the commit, all changes are recorded to your repository.
+
+---
+
+### Undoing your last commit
+
+If you have accidentally committed a change you can undo your change by using the "reset" command:
+
+On Windows:
+<!-- language: lang-sh -->
+
+	> git reset --soft HEAD~1
+	
+On Linux:
+<!-- language: lang-sh -->
+
+	> git reset --soft HEAD^
+
+![](files/Git-Workflows/Basics/Undo-the-last-local-commit.png)
+
+Note: this does not work for your first commit ;-)
+
 
 ---
 
