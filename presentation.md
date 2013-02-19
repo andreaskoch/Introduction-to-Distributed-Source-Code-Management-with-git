@@ -245,6 +245,10 @@ There are other distributed SCMs out there, but not that many ...
 
 ---
 
+## Installation on Windows
+
+---
+
 ### Installation Wizard
 
 For the installation of git goto [http://git-scm.com](http://git-scm.com) and download the latest version for Windows and execute the installer.
@@ -314,6 +318,33 @@ The cmd-folder contains the git.exe and a script which sets the PATH to the bin 
 When the installation was successful when you can execute "git.exe" from all locations on your system:
 
 ![Screenshot of the git installation - Command Prompt](files/Git-Installation-Process/Screenshot-Git-Installation-on-Windows-8-Command-Prompt.png)
+
+---
+
+## Configuration
+
+---
+
+### Global Config File (.gitconfig)
+
+The global git configuration is located in a file called .gitconfig in your home directory
+
+	> %UserProfile%\.gitconfig
+
+![](files/Git-Configuration/Screenshot-Git-Configuration-dot-gitconfig-user-name-and-email.png)
+
+---
+
+### Set Username and Email
+
+In order to set your Username and Email adress for future commits you can either edit the "%UserProfile%\.gitconfig" file in an editor of your choice or use git config command with the `--global` flag:
+
+<!-- language: lang-sh -->
+
+	> git config --global user.name "Your Name"
+	> git config --global user.email "andyk7@gmail.com"
+
+![Screenshot set username and email - Set Username and Email with git](files/Git-Configuration/Username-and-Email/Screenshot-Setting-username-and-email-globally-with-git-3-email.png)
 
 ---
 
