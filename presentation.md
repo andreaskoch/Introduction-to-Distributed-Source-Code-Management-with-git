@@ -506,7 +506,7 @@ Once you have executed the commit, all changes are recorded to your repository.
 
 ---
 
-### Undoing your last commit
+### Undoing your last local commit
 
 If you have accidentally committed a change you can undo your change by using the "reset" command:
 
@@ -524,6 +524,18 @@ On Linux:
 
 Note: this does not work for your first commit ;-)
 
+[more details](http://stackoverflow.com/questions/927358/undo-last-git-commit)
+
+---
+
+### Rewriting History
+
+
+[more details](http://git-scm.com/book/ch6-4.html)
+
+---
+
+### Undoing a public commit
 
 ---
 
