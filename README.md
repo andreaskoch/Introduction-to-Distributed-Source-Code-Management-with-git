@@ -636,6 +636,43 @@ If you prefer a nice visualization of the differences between two commits you ca
 
 ---
 
+### Git ignore files
+
+If you want to make sure certain files are never added to your index and therefor never commited you can list these files in a file called ".gitignore".
+
+**Example: Ignoring .html files**
+
+	*.html
+
+![Screenshot of an git ignore file](files/Git-Workflows/Basics/Git-ignore.png)
+
+---
+
+### An ignore file for .NET projects
+
+The content of an ingore file for .NET projects typically looks something like this:
+
+	[Oo]bj
+	[Bb]in
+	*.user
+	*.suo
+	*.[Cc]ache
+	*.bak
+	*.ncb
+	*.log 
+	*.DS_Store
+	[Tt]humbs.db 
+	_ReSharper.*
+	*.resharper
+
+
+All files which match the patterns specified here will not be added to the index when using "git add ."
+
+
+[more details](http://stackoverflow.com/questions/2143956/gitignore-for-visual-studio-projects-and-solutions)
+
+---
+
 ### Show a list of local branches
 
 The default branch in git is called "master". To display a list of all branches in your current repository use the "branch" command:
@@ -846,7 +883,25 @@ If you want to publish your changes to a remote repository you can use the **pus
 
 ---
 
-### An ignore file for .NET projects
+### Fetching changes from a remote location
+
+git pull will downlaod all changes from the remote respository and merge them with your current branch. If you only want to download the changes without merging them you can use **fetch** instead of **pull**:
+
+<!-- language: lang-sh -->
+
+	> git fetch <name of the remote> <branchname>
+
+---
+
+### Cleaning up a repository
+
+If you want to delete all files from your current repository which are not part of your repository and have not been added to the index / stating area you can use the **clean** command:
+
+<!-- language: lang-sh -->
+
+	> git clean -df
+
+![Screenshot of git clean in action](files/Git-Workflows/Basics/Git-clean.png)
 
 ---
 
