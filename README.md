@@ -738,8 +738,15 @@ After you have resolved the conflict, you need to stage the changes and commit t
 
 ---
 
-### Deleting branches
+### Deleting a local branch
 
+Local branches can be easily deleted:
+
+<!-- language: lang-sh -->
+
+	> git branch -d <name-of-the-branch>
+
+![Deleting a local branch with git branch -d branchname](files/Git-Workflows/Basics/Deleting-a-local-branch.png)
 
 ---
 
