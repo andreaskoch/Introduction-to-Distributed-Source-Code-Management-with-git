@@ -611,6 +611,57 @@ If you prefer a nice visualization of the differences between two commits you ca
 
 ---
 
+### Show a list of local branches
+
+The default branch in git is called "master". To display a list of all branches in your current repository use the "branch" command:
+
+<!-- language: lang-sh -->
+
+	> git branch
+
+
+![Show local branches](files/Git-Workflows/Basics/Show-Branches.png)
+
+The branch that is marked with an asterisk (*) is the branch you are currently on.
+
+---
+
+### Show al list of all branches
+
+To display a complete list of all local and remote branches you can use the `-a` flag.
+
+<!-- language: lang-sh -->
+
+	> git branch -a
+
+![Show all branches](files/Git-Workflows/Basics/Show-all-Branhces.png)
+
+---
+
+### Creating a branch
+
+To create a new branch use the "branch" command with the name of your new branch:
+
+<!-- language: lang-sh -->
+
+	> git branch <branch-name>
+
+![Create a new branch](files/Git-Workflows/Basics/Creating-a-new-Branch.png)
+
+---
+
+### Switching between branches
+
+To switch your current repository context to another branch you can use the "checkout" command:
+
+<!-- language: lang-sh -->
+
+	> git checkout <branch-name>
+
+![Switching a branch](files/Git-Workflows/Basics/Switching-a-branch.png)
+
+---
+
 ### Cloning a repository
 
 In order to retrieve a copy of an existing repository you can use the **clone** command:
@@ -643,6 +694,47 @@ Instead of cloning another repository you can also pull from it into your existi
 	> git pull <Path-or-URL>
 
 ![Pulling changes into an existing repository](files/Git-Workflows/Basics/Pulling-changes-from-a-remote-repository-into-local-repository.png)
+
+---
+
+### Pushing changes to a remote repository
+
+If you want to publish your changes to a remote repository you can use the **push** command:
+
+<!-- language: lang-sh -->
+
+	> git push <name of the remote> <branchname>
+
+**Remote** := A remote is a version of a project that is located at another location.
+
+---
+
+## Display a list of all remotes
+
+<!-- language: lang-sh -->
+
+	> git remote -v
+
+![List all remotes of a repository](files/Git-Workflows/Basics/List-all-remotes.png)
+
+---
+
+### Adding a remote
+
+<!-- language: lang-sh -->
+
+	> git remote add <name of the remote> <Path-or-URL-of-the-Repository>
+
+![Adding a remote repository](files/Git-Workflows/Basics/Adding-a-remote.png)
+
+---
+
+### Pulling changes from a remote location
+
+<!-- language: lang-sh -->
+
+	> git pull <name of the remote> <branchname>
+
 
 ---
 
