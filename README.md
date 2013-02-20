@@ -533,6 +533,31 @@ Once you have executed the commit, all changes are recorded to your repository.
 
 ---
 
+### Viewing the commit history
+
+Every commit to a repository is recording and the global history of a repository can be viewed with the "log" command.
+
+<!-- language: lang-sh -->
+
+	> git log
+
+![Screenshot of results of git log](files/Git-Workflows/Basics/Viewing-the-complete-git-history-with-log.png)
+
+If you only want to see latest n-commits you can use the `-n` flag for the log command:
+
+**Show only the latest 3 commits**
+<!-- language: lang-sh -->
+
+	> git log -n 3
+
+![Results of git log -n 3 as a screenshot](files/Git-Workflows/Basics/Viewing-the-last-n-commits-of-the-git-history-with-log-n.png)
+
+Or you can use **gitk** to a view a graphical representation of your commit history:
+
+![Using gitk to view the local commit history](files/Git-Workflows/Basics/Viewing-the-git-history-with-gitk.png)
+
+---
+
 ### Undoing your last local commit
 
 If you have accidentally committed a change you can undo your change by using the "reset" command:
