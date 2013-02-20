@@ -750,6 +750,27 @@ Local branches can be easily deleted:
 
 ---
 
+### Deleting a remote branch
+
+In order to delete a branch which has been pushed to a remote location you need to use a different command:
+
+<!-- language: lang-sh -->
+
+	> git push origin --delete <branchName>
+
+or
+
+<!-- language: lang-sh -->
+
+	> git push origin :<branchName>
+
+
+![Deleting a remote branch with git push origin --delete branchname](files/Git-Workflows/Basics/Deleting-a-remote-branch.png)
+
+[more details](http://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-both-locally-and-in-github)
+
+---
+
 ### Cloning a repository
 
 In order to retrieve a copy of an existing repository you can use the **clone** command:
