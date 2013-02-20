@@ -658,7 +658,63 @@ To switch your current repository context to another branch you can use the "che
 
 	> git checkout <branch-name>
 
+Or you can use this command:
+
+<!-- language: lang-sh -->
+
+	> git branch <branch-name>
+
 ![Switching a branch](files/Git-Workflows/Basics/Switching-a-branch.png)
+
+---
+
+### Merging branches without no conflicts
+
+To merge a branch into another use the "merge" command:
+
+<!-- language: lang-sh -->
+
+	> git merge <branch-name>
+
+![Switching a branch](files/Git-Workflows/Basics/Merging-branches-no-conflicts.png)
+
+If the merge can be performed without conflicts you will see the commits from the merged branch in your current branch.
+
+---
+
+### Merging branches with conflicts
+
+If git cannot decide on how to merge changes you will get a **merge conflict** which needs to be **resolved** and **committed**:
+
+<!-- language: lang-sh -->
+
+	> git merge <branch-name>
+	CONFLICT (content): Merge conflict in ...
+	Automatic merge failed; fix conflicts and then commit the result
+
+![Screenshot of a merge with results in a conflict](files/Git-Workflows/Basics/Merge-branch-with-conflict-1.png)
+
+You can resolve the conflict with the "mergetool" command:
+
+<!-- language: lang-sh -->
+
+	> git mergetool
+
+![Screenshot of the mergetool resolving a conflict](files/Git-Workflows/Basics/Merge-branch-with-conflict-3-Merge-tool.png)
+
+After you have resolved the conflict, you need to stage the changes and commit them:
+
+<!-- language: lang-sh -->
+
+	> git add <file-with-conflict>
+	> git commit -m "Merged with branch xy"
+
+![Results of a branch merge with conflicts after the conflict has been resovled](files/Git-Workflows/Basics/Merge-branch-with-conflict-4-Merge-Result.png)
+
+---
+
+### Deleting branches
+
 
 ---
 
@@ -735,6 +791,9 @@ If you want to publish your changes to a remote repository you can use the **pus
 
 	> git pull <name of the remote> <branchname>
 
+---
+
+### An ignore file for .NET projects
 
 ---
 
