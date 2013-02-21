@@ -63,7 +63,7 @@ There is a good Google Tech Talk with Linus Torvalds where he talks about the hi
 
 ### git today
 
-- The git code is publicly available is tracked with ... git (available at [github.com/git](http://github.com/git/git/))
+- The git code is publicly available and is tracked with ... git (available at [github.com/git](http://github.com/git/git/))
 - The code is activly maintained by > 50 developers
 - In 2012 git has been used by 27% of all professional software developers (see: [Eclipse Foundation Survey](http://en.wikipedia.org/wiki/Git_(software)#Adoption))
 - Github one of the largest git hosters has reached [3 milliion users](https://github.com/blog/1382-three-million-users) in Januar 2013.
@@ -294,6 +294,8 @@ Unix just uses a single line feed charachter for indicating new lines:
 `"\n"`
 
 ![Screenshot of the git installation wizard - Line Ending Conversion](files/Git-Installation-Process/Screenshot-Git-Installation-on-Windows-4-Checkout-Style-Dialog.png)
+
+[Scott Hanselman - You're just another carriage return line feed in the wall](http://www.hanselman.com/blog/YoureJustAnotherCarriageReturnLineFeedInTheWall.aspx)
 
 ---
 
@@ -720,12 +722,6 @@ To switch your current repository context to another branch you can use the "che
 
 	> git checkout <branch-name>
 
-Or you can use this command:
-
-<!-- language: lang-sh -->
-
-	> git branch <branch-name>
-
 ![Switching a branch](files/Git-Workflows/Basics/Switching-a-branch.png)
 
 ---
@@ -957,6 +953,7 @@ The "Pro Git" eBook is available for free on the git website.
 - [Intro to Git for Web Designers](http://www.webdesignerdepot.com/2009/03/intro-to-git-for-web-designers/)
 - [Git Cheat Sheet](http://byte.kde.org/~zrusin/git/git-cheat-sheet.svg)
 - [Git Reference](http://gitref.org)
+- [Hanselminutes - Git support within Visual Studio](http://www.hanselminutes.com/359/git-support-within-visual-studio)
 
 ---
 
