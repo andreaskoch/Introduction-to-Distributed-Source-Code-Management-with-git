@@ -954,6 +954,7 @@ The "Pro Git" eBook is available for free on the git website.
 - [Git Cheat Sheet](http://byte.kde.org/~zrusin/git/git-cheat-sheet.svg)
 - [Git Reference](http://gitref.org)
 - [Hanselminutes - Git support within Visual Studio](http://www.hanselminutes.com/359/git-support-within-visual-studio)
+- [Svenpet.com - Don't use Git](http://svenpet.com/2013/02/21/dont-use-git/)
 
 ---
 
