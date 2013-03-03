@@ -958,8 +958,6 @@ The "Pro Git" eBook is available for free on the git website.
 
 ---
 
-language: en-US
-
+language: en
 date: 2013-02-15
-
 tags: Source Code Management, git
