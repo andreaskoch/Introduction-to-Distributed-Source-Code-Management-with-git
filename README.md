@@ -901,6 +901,49 @@ If you want to delete all files from your current repository which are not part 
 
 ---
 
+### Changing the author info of one or more commits
+
+Sometimes you commit changes with the wrong username or email address configured.
+
+If you want to correct this mistake you can use the "filter-branch" command in a "small" shell script to replace the author info of all commits with the wrong email address with a new email address:
+
+<!-- language: lang-sh -->
+
+	#!/bin/sh
+
+	git filter-branch --env-filter '
+	 
+	an="$GIT_AUTHOR_NAME"
+	am="$GIT_AUTHOR_EMAIL"
+	cn="$GIT_COMMITTER_NAME"
+	cm="$GIT_COMMITTER_EMAIL"
+	 
+	if [ "$GIT_COMMITTER_EMAIL" = "andreas.koch@old-domain.com" ]
+	then
+	    cn="Andreas Koch"
+	    cm="andreas.koch@new-domain.com"
+	fi
+	if [ "$GIT_AUTHOR_EMAIL" = "andreas.koch@old-domain.de" ]
+	then
+	    an="Andreas Koch"
+	    am="andreas.koch@new-domain.com"
+	fi
+	 
+	export GIT_AUTHOR_NAME="$an"
+	export GIT_AUTHOR_EMAIL="$am"
+	export GIT_COMMITTER_NAME="$cn"
+	export GIT_COMMITTER_EMAIL="$cm"
+	'
+
+Warning: This will be a bit of a problem if you already shared your repository with others - because the SHA1 hashes will change.
+
+**Links**
+
+- [github:help - Changing author info](https://help.github.com/articles/changing-author-info)
+- [stackoverflow.com - How do I change the author of a commit in git?](http://stackoverflow.com/questions/750172/how-do-i-change-the-author-of-a-commit-in-git)
+
+---
+
 ### Hosting
 
 - Bitbucket/Github
