@@ -952,6 +952,33 @@ git log --graph --oneline --all --decorate
 
 ![Screenshot of git log --graph --oneline --all](files/Git-Workflows/Basics/Visualizing-the-commit-history-in-the -commandline.png)
 
+### Create an alias for complicated commands
+
+If you don't want to specify all the command options for commands like `git log --graph --oneline --all --decorate` you can add an alias:
+
+```sh
+git config --global alias.<name of the alias> "<the command plus all the options>"
+```
+
+**Example**: Create an alias named `lga` for visualizing the commit graph with all branches
+
+```sh
+git config --global alias.lga "log --graph --oneline --all --decorate"
+```
+
+![Using config to create an alias for commonly used commands including all options](files/Git-Workflows/Basics/Creating an alias.png)
+
+What this will do is create an new `alias` section in your global `.gitconfig`:
+
+![Screenshot of the alias section of the global git config after an alias named lga has been created](files/Git-Workflows/Basics/Alias section of the git config.png)
+
+Once you have created the alias you can call it using `git <alias name>`:
+
+```sh
+git lga
+```
+
+![The git lga alias in action](files/Git-Workflows/Basics/Using the git lga alias to show the commit graph.png)
 
 ---
 
