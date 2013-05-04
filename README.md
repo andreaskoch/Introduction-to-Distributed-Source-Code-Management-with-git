@@ -942,6 +942,17 @@ Warning: This will be a bit of a problem if you already shared your repository w
 - [github:help - Changing author info](https://help.github.com/articles/changing-author-info)
 - [stackoverflow.com - How do I change the author of a commit in git?](http://stackoverflow.com/questions/750172/how-do-i-change-the-author-of-a-commit-in-git)
 
+### Visualize the commit history in the console
+
+To get a nice representation of your commit history with all branches and label you can add the `--graph` option to the `log` command (along with some other switches):
+
+```sh
+git log --graph --oneline --all --decorate
+```
+
+![Screenshot of git log --graph --oneline --all](files/Git-Workflows/Basics/Visualizing-the-commit-history-in-the -commandline.png)
+
+
 ---
 
 ### Hosting
