@@ -4,11 +4,7 @@ An introduction to distributed source code management with git.
 
 ![git Logo](files/Git-logo.png)
 
----
-
 ## Source Code Management / Version Control
-
----
 
 ### What do you want from source code management systems?
 
@@ -18,11 +14,7 @@ An introduction to distributed source code management with git.
 - Easy **collaboration** with (remote) co-workers
 - **No overhead** (file cluttering, file locks, server management)
 
----
-
 ## An overview of git
-
----
 
 ### What is git?
 
@@ -34,8 +26,6 @@ A distributed version control (DVC) and source code management (SCM) system
 - Free and open software
 - Leight-weight
 
----
-
 ### The git command-line
 
 Git is a powerful command-line tool you can use on Linux, Mac OS and Windows:
@@ -45,8 +35,6 @@ Git is a powerful command-line tool you can use on Linux, Mac OS and Windows:
 	$ git
 
 ![Screenshot of the git command line](files/Command-Line/Screenshot-git-command-line.png)
-
----
 
 ### History of git
 
@@ -59,8 +47,6 @@ There is a good Google Tech Talk with Linus Torvalds where he talks about the hi
 
 <iframe width="420" height="315" src="http://www.youtube.com/embed/4XpnKHJAok8" frameborder="0" allowfullscreen></iframe>
 
----
-
 ### git today
 
 - The git code is publicly available and is tracked with ... git (available at [github.com/git](http://github.com/git/git/))
@@ -70,16 +56,12 @@ There is a good Google Tech Talk with Linus Torvalds where he talks about the hi
 
 ![Screenshot of the Git Contributors Page at github.com](files/Why-use-Git/Screenshot-Git-Source-Code-Contributors-Page-at-Github.png)
 
----
-
 ### Why the name "git"?
 
 git := British slang meaning "a rotten person"
 
 > I’m an egotistical bastard, and I name all my projects after myself. First Linux, now git.”
 > - Linus Torvals
-
----
 
 ### Key features of git
 
@@ -88,8 +70,6 @@ git := British slang meaning "a rotten person"
 - Every repository contains the complete history
 - Git is optimized for rapid branching and merging
 - Easy synchronization with other repositories over existing protocols such as http, ftp, rsync or ssh
-
----
 
 ### Distributed Version Control
 
@@ -102,8 +82,6 @@ git := British slang meaning "a rotten person"
 - no central repository
 - no special permission
 
----
-
 ### Distributed development workflows
 
 git supports all kinds of developement workflows and branching strategries (because of its distributed nature):
@@ -113,7 +91,6 @@ git supports all kinds of developement workflows and branching strategries (beca
 One central repository where one or more developers pull from and commit to:
 
 ![Illustration of the Subversion-Style workflow](files/Distributed-Workflows/Git-Distributed-Workflow-Subversion-Style.png)
-
 
 **Integration Manager Workflow**
 
@@ -129,8 +106,6 @@ In this **network of trust** a "dictator" pulls from the repositories of her or 
 ![Illustration of the Dictator and Lieutenants Workflow](files/Distributed-Workflows/Git-Distributed-Workflow-Dictator-and-Lieutenants.png)
 
 source: http://git-scm.com/about/distributed
-
----
 
 ### How does git cover the things you expect from a SCM?
 
@@ -156,15 +131,12 @@ source: http://git-scm.com/about/distributed
 - Easy exchange of commits
 - Branches and even single commits can be easily exchanged and merged
 
-
 **No overhead**
 
 - All git needs is a ".git" folder in your repository
 - Git does not hold file-locks
 - Developers don't have do asks for permission before editing a file
 - You don't need special infrastructure to exchange commits - all you need is HTTP or SSH
-
----
 
 ### What distinguishes git from centralized SCMs ...
 
@@ -176,8 +148,6 @@ source: http://git-scm.com/about/distributed
 - no special infrastructure
 - no need to be afraid of branching and merging
 
----
-
 ### Why do I think we could benefit from using git ?
 
 With our centralized version control system branching and merging is so painful for us that we hardly do it.
@@ -187,8 +157,6 @@ A **healthy branching strategy** would look something like this:
 
 But opposed to that, this is how our unhealthy branching "strategy" looks like ... because branching and merging is (considered) hard:
 ![Illustration of an ubhealth development strategy which does not use branching](files/Why-use-Git/Unhealthy-Branching-Strategy.png)
-
----
 
 ### Other distributed version control systems
 
@@ -216,14 +184,10 @@ There are other distributed SCMs out there, but not that many ...
 - git is influenced by Monotone
 - is not as widely used as Mercurial or Bazaar
 
----
-
 ## Basics
 
 - SSH Authentication
 - How git works
-
----
 
 ## Terminology
 
@@ -234,8 +198,6 @@ There are other distributed SCMs out there, but not that many ...
 - Stash
 - .gitignore
 
----
-
 ## Setting up git on Windows
 
 - Installation
@@ -243,19 +205,13 @@ There are other distributed SCMs out there, but not that many ...
 	- Username, Email
 	- Merge Tools
 
----
-
 ## Installation on Windows
-
----
 
 ### Installation Wizard
 
 For the installation of git goto [http://git-scm.com](http://git-scm.com) and download the latest version for Windows and execute the installer.
 
 ![Screenshot of the git installation wizard start screen](files/Git-Installation-Process/Screenshot-Git-Installation-on-Windows-1-Start.png)
-
----
 
 ### Installation Wizard - Components
 
@@ -266,15 +222,11 @@ In the "Select Components" dialog I suggest that you **uncheck**
 
 ![Screenshot of the git installation wizard - Adjusting your PATH environment](files/Git-Installation-Process/Screenshot-Git-Installation-on-Windows-2-Select-Components-Diaglog.png)
 
----
-
 ### Installation Wizard - PATH Variable
 
 The installation wizard asks you how it should integrate with your system. Please check "Run Git from the Windows Command Prompt". This will make the "git.exe" avaiable from everywhere in your system.
 
 ![Screenshot of the git installation wizard - Select Components](files/Git-Installation-Process/Screenshot-Git-Installation-on-Windows-3-Adjust-System-PATH-Dialog.png)
-
----
 
 ### Installation Wizard - Line Ending Conversion
 
@@ -297,15 +249,11 @@ Unix just uses a single line feed charachter for indicating new lines:
 
 [Scott Hanselman - You're just another carriage return line feed in the wall](http://www.hanselman.com/blog/YoureJustAnotherCarriageReturnLineFeedInTheWall.aspx)
 
----
-
 ### Installation - bin folder
 
 The git intaller installs a bunch of Windows-compatible Linux commands.
 
 ![Screenshot of the git installation - Bin Folder](files/Git-Installation-Process/Screenshot-Git-Installation-on-Windows-6-Bin-Folder.png)
-
----
 
 ### Installation - cmd folder
 
@@ -313,23 +261,15 @@ The cmd-folder contains the git.exe and a script which sets the PATH to the bin 
 
 ![Screenshot of the git installation - Bin Folder](files/Git-Installation-Process/Screenshot-Git-Installation-on-Windows-7-cmd-Folder-and-PATH-Environment-Variable.png)
 
----
-
 ### Testing the installation
 
 When the installation was successful when you can execute "git.exe" from all locations on your system:
 
 ![Screenshot of the git installation - Command Prompt](files/Git-Installation-Process/Screenshot-Git-Installation-on-Windows-8-Command-Prompt.png)
 
----
-
 ## Configuration
 
----
-
 ### Configuration: Username and Email
-
----
 
 #### Global Config File (.gitconfig)
 
@@ -338,8 +278,6 @@ The global git configuration is located in a file called .gitconfig in your home
 	> %UserProfile%\.gitconfig
 
 ![](files/Git-Configuration/Screenshot-Git-Configuration-dot-gitconfig-user-name-and-email.png)
-
----
 
 #### Set Username and Email
 
@@ -352,8 +290,6 @@ In order to set your Username and Email adress for future commits you can either
 
 ![Screenshot set username and email - Set Username and Email with git](files/Git-Configuration/Username-and-Email/Screenshot-Setting-username-and-email-globally-with-git-3-email.png)
 
----
-
 ### Configuration: Merge and Diff Tool
 
 By default git does not ship with much GUI tools and everything is handled in the command-line:
@@ -361,8 +297,6 @@ By default git does not ship with much GUI tools and everything is handled in th
 ![Screenshot of the gits command-line based diff viewer](files/Git-Configuration/Merge-Tool/Screenshot-gits-default-command-line-diff-tool.png)
 
 But you can configure git to use other diff and merge tools (but this isn't that easy on Windows if you don't use tools which are supported out of the box).
-
----
 
 ### Configuring KDiff3 on Windows
 
@@ -398,11 +332,7 @@ http://kdiff3.sourceforge.net
 
 It is supposed to be easy to integrate any other merge tool with git. And it is - at least on Unix based systems. But on Windows I haven't found a way yet.
 
----
-
 ## Working with git
-
----
 
 ### Typical workflows with git
 
@@ -424,8 +354,6 @@ It is supposed to be easy to integrate any other merge tool with git. And it is 
 - Rewriting history
 - Rebasing Repositories
 - Managing identities
-
----
 
 ### Using the built-in help
 
@@ -452,8 +380,6 @@ Git comes with a comprehensive help documentation which ships with every install
 
 ![Screenshot of the git help command result](files/Git-Workflows/Basics/Git-Help-Overview.png)
 
----
-
 ### Creating a repository - git init
 
 You can initialize a repository in any directory by using the **init** command:
@@ -466,15 +392,11 @@ The init command then creates a hidden subdirectory named ".git" that contains a
 
 ![](files/Git-Workflows/Basics/Creating-a-repository-with-git-init.png)
 
----
-
 ### The .git metadata folder
 
 The .git folder is where all you commits, branches and tags will be stored, but for now you don't need to bother with the contents of this folder:
 
 ![Screenshot of the content of a .git metadata folder](files/Git-Workflows/Basics/Git-Metadata-Folder-Content.png)
-
----
 
 ### Checking the status of your repository with git status
 
@@ -485,8 +407,6 @@ You can quickly check which the status of files in your repository/index by usin
 	> git status
 
 ![Using git status to check the index of a repository](files/Git-Workflows/Basics/Checking-a-repository-with-git-status.png)
-
----
 
 ### Adding files to the index
 
@@ -507,8 +427,6 @@ The index aka "staging area" is a file that contains the files that will go into
 
 ![Screenshot of a git repository where a new README.txt file has been added to the Index aka Staging Area](files/Git-Workflows/Basics/Git-Basic-the-index-aka-staging-area.png)
 
----
-
 ### Removing files from the index
 
 You can remove files from the staging area if you have added it accidentally. This means will will not go in your next commit, but the file itself will remain untouched in the folder.
@@ -518,8 +436,6 @@ You can remove files from the staging area if you have added it accidentally. Th
 	> git rm --cached <filename>
 
 ![Screenshot removing a file from the staging area](files/Git-Workflows/Basics/Removing-a-file-from-the-index-aka-staging-area.png)
-
----
 
 ### Commiting changes
 
@@ -532,8 +448,6 @@ By commiting you can save all staged files to your (local) repository.
 ![Screenshot of a first commit](files/Git-Workflows/Basics/Committing-a-change.png)
 
 Once you have executed the commit, all changes are recorded to your repository.
-
----
 
 ### Viewing the commit history
 
@@ -558,8 +472,6 @@ Or you can use **gitk** to a view a graphical representation of your commit hist
 
 ![Using gitk to view the local commit history](files/Git-Workflows/Basics/Viewing-the-git-history-with-gitk.png)
 
----
-
 ### Undoing your last local commit
 
 If you have accidentally committed a change you can undo your change by using the "reset" command:
@@ -579,8 +491,6 @@ On Linux:
 Note: this does not work for your first commit ;-)
 
 [more details](http://stackoverflow.com/questions/927358/undo-last-git-commit)
-
----
 
 ### Correcting a commit message
 
@@ -602,8 +512,6 @@ This command opens up a text editor in which you can simple change the text of y
 
 [more details](http://git-scm.com/book/ch6-4.html)
 
----
-
 ### Reverting a public commit
 
 If you want to take back a commit which has already been pushed to another location can cannot simply "undo" it, because public history cannot be changed. But you can add a commit which **reverts** another commit.
@@ -617,8 +525,6 @@ git revert applies the inverse of a given commit.
 ![Screenshot of the text editor window that is displayed when a revert is being performed](files/Git-Workflows/Basics/Revert-a-commit-message-editor.png)
 
 ![Result of git revert](files/Git-Workflows/Basics/Revert-a-commit-result.png)
-
----
 
 ### Comparing commits
 
@@ -636,8 +542,6 @@ If you prefer a nice visualization of the differences between two commits you ca
 
 ![Screenshot of git diff in action](files/Git-Workflows/Basics/git-difftool-comparing-commits.png)
 
----
-
 ### Git ignore files
 
 If you want to make sure certain files are never added to your index and therefor never commited you can list these files in a file called ".gitignore".
@@ -647,8 +551,6 @@ If you want to make sure certain files are never added to your index and therefo
 	*.html
 
 ![Screenshot of an git ignore file](files/Git-Workflows/Basics/Git-ignore.png)
-
----
 
 ### An ignore file for .NET projects
 
@@ -673,8 +575,6 @@ All files which match the patterns specified here will not be added to the index
 
 [more details](http://stackoverflow.com/questions/2143956/gitignore-for-visual-studio-projects-and-solutions)
 
----
-
 ### Show a list of local branches
 
 The default branch in git is called "master". To display a list of all branches in your current repository use the "branch" command:
@@ -688,8 +588,6 @@ The default branch in git is called "master". To display a list of all branches 
 
 The branch that is marked with an asterisk (*) is the branch you are currently on.
 
----
-
 ### Show al list of all branches
 
 To display a complete list of all local and remote branches you can use the `-a` flag.
@@ -699,8 +597,6 @@ To display a complete list of all local and remote branches you can use the `-a`
 	> git branch -a
 
 ![Show all branches](files/Git-Workflows/Basics/Show-all-Branhces.png)
-
----
 
 ### Creating a branch
 
@@ -712,8 +608,6 @@ To create a new branch use the "branch" command with the name of your new branch
 
 ![Create a new branch](files/Git-Workflows/Basics/Creating-a-new-Branch.png)
 
----
-
 ### Switching between branches
 
 To switch your current repository context to another branch you can use the "checkout" command:
@@ -723,8 +617,6 @@ To switch your current repository context to another branch you can use the "che
 	> git checkout <branch-name>
 
 ![Switching a branch](files/Git-Workflows/Basics/Switching-a-branch.png)
-
----
 
 ### Merging branches without no conflicts
 
@@ -737,8 +629,6 @@ To merge a branch into another use the "merge" command:
 ![Switching a branch](files/Git-Workflows/Basics/Merging-branches-no-conflicts.png)
 
 If the merge can be performed without conflicts you will see the commits from the merged branch in your current branch.
-
----
 
 ### Merging branches with conflicts
 
@@ -769,8 +659,6 @@ After you have resolved the conflict, you need to stage the changes and commit t
 
 ![Results of a branch merge with conflicts after the conflict has been resovled](files/Git-Workflows/Basics/Merge-branch-with-conflict-4-Merge-Result.png)
 
----
-
 ### Deleting a local branch
 
 Local branches can be easily deleted:
@@ -780,8 +668,6 @@ Local branches can be easily deleted:
 	> git branch -d <name-of-the-branch>
 
 ![Deleting a local branch with git branch -d branchname](files/Git-Workflows/Basics/Deleting-a-local-branch.png)
-
----
 
 ### Deleting a remote branch
 
@@ -802,8 +688,6 @@ or
 
 [more details](http://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-both-locally-and-in-github)
 
----
-
 ### Cloning a repository
 
 In order to retrieve a copy of an existing repository you can use the **clone** command:
@@ -822,8 +706,6 @@ For example you can clone the repository of this presentation from github:
 
 ![Cloning a repository from github](files/Git-Workflows/Basics/Cloning-a-remote-repository-from-github.png)
 
----
-
 ### Pulling from another repository
 
 Instead of cloning another repository you can also pull from it into your existing repository.
@@ -837,8 +719,6 @@ Instead of cloning another repository you can also pull from it into your existi
 
 ![Pulling changes into an existing repository](files/Git-Workflows/Basics/Pulling-changes-from-a-remote-repository-into-local-repository.png)
 
----
-
 ### Pushing changes to a remote repository
 
 If you want to publish your changes to a remote repository you can use the **push** command:
@@ -849,8 +729,6 @@ If you want to publish your changes to a remote repository you can use the **pus
 
 **Remote** := A remote is a version of a project that is located at another location.
 
----
-
 ## Display a list of all remotes
 
 <!-- language: lang-sh -->
@@ -858,8 +736,6 @@ If you want to publish your changes to a remote repository you can use the **pus
 	> git remote -v
 
 ![List all remotes of a repository](files/Git-Workflows/Basics/List-all-remotes.png)
-
----
 
 ### Adding a remote
 
@@ -869,15 +745,11 @@ If you want to publish your changes to a remote repository you can use the **pus
 
 ![Adding a remote repository](files/Git-Workflows/Basics/Adding-a-remote.png)
 
----
-
 ### Pulling changes from a remote location
 
 <!-- language: lang-sh -->
 
 	> git pull <name of the remote> <branchname>
-
----
 
 ### Fetching changes from a remote location
 
@@ -886,8 +758,6 @@ git pull will downlaod all changes from the remote respository and merge them wi
 <!-- language: lang-sh -->
 
 	> git fetch <name of the remote> <branchname>
-
----
 
 ### Cleaning up a repository
 
@@ -898,8 +768,6 @@ If you want to delete all files from your current repository which are not part 
 	> git clean -df
 
 ![Screenshot of git clean in action](files/Git-Workflows/Basics/Git-clean.png)
-
----
 
 ### Changing the author info of one or more commits
 
@@ -942,62 +810,16 @@ Warning: This will be a bit of a problem if you already shared your repository w
 - [github:help - Changing author info](https://help.github.com/articles/changing-author-info)
 - [stackoverflow.com - How do I change the author of a commit in git?](http://stackoverflow.com/questions/750172/how-do-i-change-the-author-of-a-commit-in-git)
 
-### Visualize the commit history in the console
-
-To get a nice representation of your commit history with all branches and label you can add the `--graph` option to the `log` command (along with some other switches):
-
-```sh
-git log --graph --oneline --all --decorate
-```
-
-![Screenshot of git log --graph --oneline --all](files/Git-Workflows/Basics/Visualizing-the-commit-history-in-the -commandline.png)
-
-### Create an alias for complicated commands
-
-If you don't want to specify all the command options for commands like `git log --graph --oneline --all --decorate` you can add an alias:
-
-```sh
-git config --global alias.<name of the alias> "<the command plus all the options>"
-```
-
-**Example**: Create an alias named `lga` for visualizing the commit graph with all branches
-
-```sh
-git config --global alias.lga "log --graph --oneline --all --decorate"
-```
-
-![Using config to create an alias for commonly used commands including all options](files/Git-Workflows/Basics/Creating an alias.png)
-
-What this will do is create an new `alias` section in your global `.gitconfig`:
-
-![Screenshot of the alias section of the global git config after an alias named lga has been created](files/Git-Workflows/Basics/Alias section of the git config.png)
-
-Once you have created the alias you can call it using `git <alias name>`:
-
-```sh
-git lga
-```
-
-![The git lga alias in action](files/Git-Workflows/Basics/Using the git lga alias to show the commit graph.png)
-
----
-
 ### Hosting
 
 - Bitbucket/Github
 - Self-Hosting
 
----
-
 ## Useful Resources
-
----
 
 ### Official git website
 
 [Official git website at git-scm.com](http://git-scm.com/)
-
----
 
 ###  Interactive Online Tutorial
 
@@ -1007,8 +829,6 @@ http://try.github.com
 
 ![Screenshot of githubs interactive git course website](files/Online-Tutorial/tryGit-Online-Tutorial-at-github-Screenshot-1.png)
 
----
-
 ### Pro Git eBook
 
 The "Pro Git" eBook is available for free on the git website.
@@ -1017,16 +837,12 @@ The "Pro Git" eBook is available for free on the git website.
 
 ![Screenshot of the online version of the Pro Git eBook](files/eBooks/Screenshot-Pro-Git-eBook-Online-Version.png)
 
----
-
 ### Videos
 
 - [Google Tech Talk: Linus Torvals on git](http://www.youtube.com/watch?v=4XpnKHJAok8)
 - [Git Basics Videos](http://git-scm.com/videos)
 - [Tekpub: Mastering Git](http://tekpub.com/productions/git)
 - [Pluralsight: Git Fundamentals](http://pluralsight.com/training/courses/TableOfContents?courseName=git-fundamentals)
-
----
 
 ### Other Resources
 
@@ -1039,6 +855,7 @@ The "Pro Git" eBook is available for free on the git website.
 
 ---
 
+type: presentation
 language: en
 date: 2013-02-15
 tags: Source Code Management, git
